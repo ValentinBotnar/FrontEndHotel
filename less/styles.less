@@ -1,0 +1,84 @@
+.allPage{
+    width: 100%;
+    background-color: blanchedalmond;  
+    height: 1000px; 
+}
+
+img{
+    width: 100%;
+    position: relative;
+}
+
+.header-menu{
+    height: 100px;
+    width: 100%;
+    align-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: white; 
+    position: absolute;
+    top: 5%;
+    left: 0;
+    li{
+        vertical-align: middle;
+    }
+    a {
+        text-decoration: none;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        margin: 0 34px 0 30px;
+        color: black;
+        font-size: 15px;
+      }
+}
+
+.flex-list-menu-left{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: center;
+}
+
+.flex-list-menu-right{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+    margin-left: auto;
+    align-items: center;
+}
+
+
+a:hover { 
+    color: red;
+}
+
+
+
+//   .dropdown-list select {
+//     background: transparent;
+//     width: 268px;
+//     padding: 5px;
+//     font-size: 16px;
+//     border: 1px solid #ccc;
+//     height: 34px;
+//  }
+
+//  .dropdown-list {
+//     width: 240px;
+//     height: 34px;
+//     overflow: hidden;
+//     background: url(new_arrow.png) no-repeat right #ddd;
+//  }
+
+ select{
+    border: none;
+    }
+    select:after{
+      content: "";
+      display: block;
+      width: 25px;
+      height: 25px;
+      background-image: url("/put_k_strelke");
+      position: absolute;
+      right: 5px;
+      top: 5px;
+    }
