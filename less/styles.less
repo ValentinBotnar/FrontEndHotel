@@ -21,14 +21,16 @@ img{
     left: 0;
     li{
         vertical-align: middle;
+        float: left;
     }
     a {
-        text-decoration: none;
         font-family: 'Ubuntu Condensed', sans-serif;
         margin: 0 34px 0 30px;
         color: black;
         font-size: 15px;
-      }
+        height: 100px;
+        border:0;
+    }
 }
 
 .flex-list-menu-left{
@@ -36,6 +38,13 @@ img{
     justify-content: flex-start;
     align-content: space-between;
     align-items: center;
+    margin-left: 60px;
+    a:hover { 
+        color: rgb(126,226,228);
+        border-bottom: 5px solid rgb(126,226,228);
+        padding-bottom: 37px;
+        transition: .5s;
+    }
 }
 
 .flex-list-menu-right{
@@ -44,41 +53,111 @@ img{
     align-content: space-between;
     margin-left: auto;
     align-items: center;
+    margin-right: 60px;
+    li{
+        margin-left: 25px;
+    }
+    a:hover { 
+        color: rgb(131,218,225);
+        border-bottom: 5px solid rgb(126,226,228);
+        padding-bottom: 37px;
+        transition: .5s;
+    }
 }
 
-
-a:hover { 
-    color: red;
+.login-button{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 60px;
+    height: 100px;
+    background-color: rgb(126,226,228);
+    text-align: center;
+    vertical-align: middle;
+    background-image: url("../img/back2-button.jpg");
+    -webkit-background-size: 100%;
+    a{
+         display: block;
+         padding-top: 35%;
+        text-align: center;
+    }
 }
-
-
-
-//   .dropdown-list select {
-//     background: transparent;
-//     width: 268px;
-//     padding: 5px;
-//     font-size: 16px;
-//     border: 1px solid #ccc;
-//     height: 34px;
-//  }
-
-//  .dropdown-list {
-//     width: 240px;
-//     height: 34px;
-//     overflow: hidden;
-//     background: url(new_arrow.png) no-repeat right #ddd;
-//  }
 
  select{
     border: none;
+    outline: none;
+}
+
+ select:after{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("/put_k_strelke");
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    margin: 0 auto;
+}
+
+.search-panel{
+    width: 70%;
+    height: 177px;
+    position: absolute;
+    top: 30%;
+    margin-left: 13%;
+}
+
+.search-panel-field{
+    height: 126px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .8);
+    div{
+        margin: 0 auto;
     }
-    select:after{
-      content: "";
-      display: block;
-      width: 25px;
-      height: 25px;
-      background-image: url("/put_k_strelke");
-      position: absolute;
-      right: 5px;
-      top: 5px;
+    select{
+        -moz-appearance: none;
+        border: none;
+        position: relative;
+        outline: none;
+        padding: 8px;
+        padding-right: 70px;
+        
     }
+}
+.search-panel-buttons{
+    height: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   
+
+    a{
+        height: 100%;
+        width: 50%;
+        border: none;
+        text-align: center;
+    }
+    .search-panel-button-search{
+        height: 100%;
+        width: 50%;
+        border: none;
+        text-align: center;
+        background-color: rgb(126,226,228);
+        
+    }
+    .search-panel-button-contact{
+        height: 100%;
+        width: 50%;
+        border: none;
+        text-align: center;
+        background-color: rgb(189,177,170);
+        background: rgb(189,177,170, .8);
+    }
+}
+
+

@@ -20,19 +20,28 @@ img {
 }
 .header-menu li {
   vertical-align: middle;
+  float: left;
 }
 .header-menu a {
-  text-decoration: none;
   font-family: 'Ubuntu Condensed', sans-serif;
   margin: 0 34px 0 30px;
   color: black;
   font-size: 15px;
+  height: 100px;
+  border: 0;
 }
 .flex-list-menu-left {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: space-between;
   align-items: center;
+  margin-left: 60px;
+}
+.flex-list-menu-left a:hover {
+  color: #7ee2e4;
+  border-bottom: 5px solid #7ee2e4;
+  padding-bottom: 37px;
+  transition: 0.5s;
 }
 .flex-list-menu-right {
   flex-wrap: wrap;
@@ -40,12 +49,37 @@ img {
   align-content: space-between;
   margin-left: auto;
   align-items: center;
+  margin-right: 60px;
 }
-a:hover {
-  color: red;
+.flex-list-menu-right li {
+  margin-left: 25px;
+}
+.flex-list-menu-right a:hover {
+  color: #83dae1;
+  border-bottom: 5px solid #7ee2e4;
+  padding-bottom: 37px;
+  transition: 0.5s;
+}
+.login-button {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 60px;
+  height: 100px;
+  background-color: #7ee2e4;
+  text-align: center;
+  vertical-align: middle;
+  background-image: url("../img/back2-button.jpg");
+  -webkit-background-size: 100%;
+}
+.login-button a {
+  display: block;
+  padding-top: 35%;
+  text-align: center;
 }
 select {
   border: none;
+  outline: none;
 }
 select:after {
   content: "";
@@ -56,4 +90,59 @@ select:after {
   position: absolute;
   right: 5px;
   top: 5px;
+  margin: 0 auto;
+}
+.search-panel {
+  width: 70%;
+  height: 177px;
+  position: absolute;
+  top: 30%;
+  margin-left: 13%;
+}
+.search-panel-field {
+  height: 126px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 12px;
+  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.8);
+}
+.search-panel-field div {
+  margin: 0 auto;
+}
+.search-panel-field select {
+  -moz-appearance: none;
+  border: none;
+  position: relative;
+  outline: none;
+  padding: 8px;
+  padding-right: 70px;
+}
+.search-panel-buttons {
+  height: 52px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search-panel-buttons a {
+  height: 100%;
+  width: 50%;
+  border: none;
+  text-align: center;
+}
+.search-panel-buttons .search-panel-button-search {
+  height: 100%;
+  width: 50%;
+  border: none;
+  text-align: center;
+  background-color: #7ee2e4;
+}
+.search-panel-buttons .search-panel-button-contact {
+  height: 100%;
+  width: 50%;
+  border: none;
+  text-align: center;
+  background-color: #bdb1aa;
+  background: #bdb1aa;
 }
