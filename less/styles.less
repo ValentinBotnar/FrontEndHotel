@@ -1,14 +1,23 @@
 .allPage{
     width: 100%;
-    background-color: blanchedalmond;  
+  //  background-color: blanchedalmond;  
     height: 1000px; 
+    margin: -4px;
+padding: 0;
 }
 
-img{
+.header img{
     width: 100%;
     position: relative;
+   // height: 632px;
+   padding: 0;
+   margin:0;
 }
-
+.header{
+    width: 100%;
+    height: 632px;
+    margin: -4px;
+}
 .header-menu{
     height: 100px;
     width: 100%;
@@ -38,10 +47,10 @@ img{
     justify-content: flex-start;
     align-content: space-between;
     align-items: center;
-    margin-left: 60px;
+    margin-left: 4%;
     a:hover { 
-        color: rgb(126,226,228);
-        border-bottom: 5px solid rgb(126,226,228);
+        color: rgb(130,164,191);
+        border-bottom: 5px solid rgb(130,164,191);
         padding-bottom: 37px;
         transition: .5s;
     }
@@ -53,13 +62,13 @@ img{
     align-content: space-between;
     margin-left: auto;
     align-items: center;
-    margin-right: 60px;
+    margin-right: 4%;
     li{
         margin-left: 25px;
     }
     a:hover { 
-        color: rgb(131,218,225);
-        border-bottom: 5px solid rgb(126,226,228);
+        color: rgb(130,164,191);
+        border-bottom: 5px solid rgb(130,164,191);
         padding-bottom: 37px;
         transition: .5s;
     }
@@ -71,15 +80,20 @@ img{
     align-items: center;
     margin-right: 60px;
     height: 100px;
-    background-color: rgb(126,226,228);
     text-align: center;
     vertical-align: middle;
-    background-image: url("../img/back2-button.jpg");
+    background-image: url("../img/back-login.jpg");
     -webkit-background-size: 100%;
+    img{
+        width: 115px;
+        height: 100px;
+        position: relative;
+    }
     a{
-         display: block;
-         padding-top: 35%;
+        display: block;
+        padding-top: 35%;
         text-align: center;
+        color: white;
     }
 }
 
@@ -134,30 +148,67 @@ img{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-   
-
     a{
         height: 100%;
         width: 50%;
         border: none;
         text-align: center;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        color: white;
     }
-    .search-panel-button-search{
-        height: 100%;
-        width: 50%;
-        border: none;
+
+    img{
+        height: 25px;
+        width: 25px;
+        float: left;
         text-align: center;
-        background-color: rgb(126,226,228);
-        
     }
-    .search-panel-button-contact{
-        height: 100%;
-        width: 50%;
-        border: none;
-        text-align: center;
+
+    .href-search img{
+        padding: 15px 10px 0 200px;
+    }
+
+    .href-contact img{
+        padding: 15px 10px 0 160px;
+    }
+
+    p{
+        padding-top: 3px;
+        float: left;
+    }
+
+    .href-search{
+        display: block;
+        background-color: rgb(130,164,191);
+        background: rgba(130,164,191, .8);
+    }
+
+    .href-contact{
+        display: block;
         background-color: rgb(189,177,170);
-        background: rgb(189,177,170, .8);
+        background: rgba(189,177,170, .8);
     }
 }
 
-
+.info-hotel{
+   margin-top: -4px;
+    width: 100%;
+    background-image: url("../img/back-info-hotel.jpg");
+    color: white;
+    font-size: 18px;
+    .info-hotel-text{
+        width: 60%;
+        width: 50%;
+        margin: 0 auto;
+    }
+    text-align: center;
+    float:left;
+}
+    
+.data-price{
+    float: left;
+    width: 100%;
+    background-color: rgb(196,182,174);
+    p{padding-left: 4%}
+   
+}
